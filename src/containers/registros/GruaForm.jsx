@@ -19,7 +19,7 @@ import { getYardsThunk } from '../../store/slices/catalogs/yards.slice';
 import { getClientsThunk } from '../../store/slices/catalogs/clients.slice';
 //RESOURCES
 import { equiposGrua, proceso, contenedores, estado, operadores, patios } from '../../resources/optionsList';
-import DropdownForm from '../../components/Inputs/formInput/dropdonwForm';
+import DropdownForm from '../../components/Inputs/formInput/DropdonwForm';
 import InputRadioForm from '../../components/Inputs/formInput/InputRadioForm';
 
 

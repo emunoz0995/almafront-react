@@ -9,7 +9,7 @@ import InputForm from '../../../components/Inputs/formInput/InputForm';
 import HomeLayout from '../../../layouts/HomeLayout';
 import HeaderForm from '../../../components/headers/catalogs/HeaderForm';
 import BtnContent from '../../../components/buttons/BtnContent';
-import DropdownForm from '../../../components/Inputs/formInput/dropdonwForm';
+import DropdownForm from '../../../components/Inputs/formInput/DropdonwForm';
 import '../../../App.css';
 // SLICES 
 import { getUserThunk, createUserThunk, updateUserThunk } from '../../../store/slices/catalogs/users.slice';
