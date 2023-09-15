@@ -210,7 +210,7 @@ export const registersSlice = createSlice({
 
 export const getRegistersThunk = () => dispatch => {
     dispatch(requestFetchRegisters())
-    axios.get(`http://localhost:4000/ingresos`)
+    axios.get(`http://44.197.107.144:4000/ingresos`)
         .then(res => {dispatch(fetchRegistersSuccess(res.data))
         })
         .catch(error => {
@@ -223,7 +223,7 @@ export const getRegistersThunk = () => dispatch => {
 
 export const getRegisterThunk = (registers_id) => dispatch => {
     dispatch(requestFetchRegister());
-    axios.get(`http://localhost:4000/ingresos/${registers_id}`)
+    axios.get(`http://44.197.107.144:4000/ingresos/${registers_id}`)
     .then(res => {dispatch(fetchRegisterSuccess(res.data))
     })
     .catch(error => {
@@ -235,7 +235,7 @@ export const getRegisterThunk = (registers_id) => dispatch => {
 
 export const createRegisterThunk = (data) => dispatch => {
     dispatch(requestCreateRegister())
-    axios.post(`http://localhost:4000/ingresos/register`, data)
+    axios.post(`http://44.197.107.144:4000/ingresos/register`, data)
     .then(res => {dispatch(createRegisterSuccess(res.data))
     })
     .catch(error => {
@@ -248,7 +248,7 @@ export const createRegisterThunk = (data) => dispatch => {
 
 export const updateRegisterThunk = (register_id, data) => dispatch => {
     dispatch(requestUpdateRegister())
-    axios.put(`http://localhost:4000/ingresos/register/${register_id}`, data)
+    axios.put(`http://44.197.107.144:4000/ingresos/register/${register_id}`, data)
     .then(res => {dispatch(updateRegisterSuccess(res.data))
     })
     .catch(error => {
@@ -261,7 +261,7 @@ export const updateRegisterThunk = (register_id, data) => dispatch => {
 
 export const deleteRegisterThunk = (register_id) => dispatch => {
     dispatch(requestDeleteRegister())
-    axios.delete(`http://localhost:4000/ingresos/register/${register_id}`)
+    axios.delete(`http://44.197.107.144:4000/ingresos/register/${register_id}`)
     .then(res => {dispatch(deleteRegisterSuccess(res.data))
     })
     .catch(error => {
